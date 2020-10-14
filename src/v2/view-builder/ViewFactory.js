@@ -7,9 +7,10 @@ import IdentifierView from './views/IdentifierView';
 import TerminalView from './views/TerminalView';
 import SuccessView from './views/SuccessView';
 
-// Device (Okta Mobile)
+// Device (Okta Verify)
 import DeviceChallengePollView from './views/DeviceChallengePollView';
 import SSOExtensionView from './views/SSOExtensionView';
+import DeviceEnrollmentView from './views/DeviceEnrollmentView';
 
 // registration
 import EnrollProfileView from './views/EnrollProfileView';
@@ -158,6 +159,11 @@ const VIEWS_MAPPING = {
   [RemediationForms.REDIRECT_IDP]: {
     [DEFAULT]: IdentifierView,
   },
+
+  [RemediationForms.DEVICE_ENROLLMENT]: {
+    [DEFAULT]: DeviceEnrollmentView,
+  },
+
   [RemediationForms.TERMINAL]: {
     [DEFAULT]: TerminalView,
   },

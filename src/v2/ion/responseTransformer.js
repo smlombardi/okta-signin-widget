@@ -77,6 +77,11 @@ const getRemediationValues = (idx) => {
         // messages generically.
         value: [],
       });
+    } else if (idx.context.deviceEnrollment) {
+      remediationValues.push({
+        name: RemediationForms.DEVICE_ENROLLMENT,
+        value: [],
+      });
     }
 
   }
